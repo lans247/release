@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BulletBundle
   - enemy
+  - VirtualCamera
   layers:
   - Default
   - TransparentFX
