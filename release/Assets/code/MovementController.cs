@@ -38,7 +38,7 @@ public class MovementController : MonoBehaviour
 
         float angle = Mathf.Atan2(
             this.transform.position.z - mouseWorldPosition.z,
-            this.transform.position.x - mouseWorldPosition.x) * Mathf.Rad2Deg;
+            this.transform.position.x - mouseWorldPosition.x * Mathf.Rad2Deg);
 
         angle = -(angle + 90f);
         this.transform.rotation = Quaternion.Euler(new Vector3(0f, angle, 0f));
